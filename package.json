@@ -1,9 +1,9 @@
 {
-  "name": "Hardik_temp",
+  "name": "hardik",
   "version": "1.0.0",
   "description": "",
-  "main": "server.cjs",
-  "type": "commonjs",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "ncc build server.js && node server.js",
     "dev": "nodemon server.js"
