@@ -8,9 +8,9 @@ import { Stats } from "./models/Stats.js";
 connectDB();
 
 cloudinary.v2.config({ 
-    cloud_name: "dtlzpa08e", 
-    api_key:"866728182114353",
-    api_secret: "851s4KHWSY_bWXcJc79oG7EYtUE"
+    cloud_name: process.env.CLOUD_NAME, 
+    api_key: process.env.API_KEY,
+    api_secret: process.env.API_SECRET
 });
 
 export const instance = new Razorpay({
