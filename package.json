@@ -1,11 +1,11 @@
 {
-  "name": "server",
+  "name": "Hardik_temp",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "ncc build server.js && node server.js",
     "dev": "nodemon server.js"
   },
   "author": "Hardik Thakre",
@@ -27,5 +27,8 @@
     "razorpay": "^2.9.2",
     "react-scripts": "^5.0.1",
     "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1"
   }
 }
